@@ -1,0 +1,156 @@
+/** @format */
+
+@import "../../styles/dark";
+@import "../../styles/light";
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  float: left;
+  text-align: center;
+  input[type="range"] {
+    appearance: none;
+    height: 0;
+    pointer-events: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4px;
+    width: 100%;
+    background: #7367f0;
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      box-sizing: content-box;
+      width: 10px;
+      height: 10px;
+      border: 2px solid #7367f0;
+      pointer-events: auto;
+      border-radius: 14px;
+      background-color: $main-dark-color;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+    &::-moz-range-thumb {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #7367f0;
+      pointer-events: auto;
+      border-radius: 14px;
+      background-color: $main-dark-color;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+    &::-ms-thumb {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #7367f0;
+      pointer-events: auto;
+      border-radius: 14px;
+      background-color: $main-dark-color;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+    &::-moz-range-track {
+      -moz-appearance: none;
+      background: none;
+    }
+    &::-ms-track {
+      border-color: transparent;
+      color: transparent;
+      background: transparent;
+    }
+  }
+  &.light-theme {
+    input[type="range"] {
+      &::-webkit-slider-thumb {
+        background-color: $main-light-color;
+      }
+      &::-moz-range-thumb {
+        background-color: $main-light-color;
+      }
+      &::-ms-thumb {
+        background-color: $main-light-color;
+      }
+    }
+    // for title light
+    [data-title]:hover:after {
+      background-color: $main-light-color;
+      color: $text-light-color;
+      box-shadow: 1px 1px 3px #726f6f;
+    }
+    [data-title2]:hover:after {
+      background-color: $main-light-color;
+      color: $text-light-color;
+      box-shadow: 1px 1px 3px #726f6f;
+    }
+  }
+}
+// for title
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+  background-color: $second-dark-color;
+  color: $text-dark-color;
+  font-size: smaller;
+}
+[data-title]:after {
+  content: attr(data-title);
+  background-color: $main-light-color;
+  color: #7367f0;
+  font-size: smaller;
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  bottom: 0.7rem;
+  left: 10%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #565696;
+  opacity: 0;
+  border: none;
+  outline: none;
+  z-index: 99999;
+  visibility: hidden;
+}
+[data-title] {
+  position: relative;
+}
+// 2
+[data-title2]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+  background-color: $second-dark-color;
+  color: $text-dark-color;
+  font-size: smaller;
+}
+[data-title2]:after {
+  content: attr(data-title2);
+  background-color: $main-light-color;
+  color: #7367f0;
+
+  position: absolute;
+  padding: 1px 5px 2px 5px;
+  bottom: 0.7rem;
+  left: 60%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #565696;
+  opacity: 0;
+  border: none;
+  outline: none;
+  z-index: 99999;
+  visibility: hidden;
+  font-size: smaller;
+}
+[data-title2] {
+  position: relative;
+}

@@ -1,0 +1,291 @@
+/** @format */
+
+@import "../../styles/_dark";
+@import "../../styles/_light";
+
+.product {
+  .menu-mode {
+    background-color: #ffffff;
+    transition: 0.3s;
+    box-shadow: 0 4px 24px 0 #22292f1a;
+    border-radius: 0.428rem;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 10px 18px 30px #22292f1a, -10px -18px 30px #22292f1a;
+    }
+    .product-img {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .product-details {
+      padding: 14px;
+      padding-bottom: 0.5rem;
+      .rating-and-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .product-rating {
+          .location {
+            color: #5e5873;
+            font-weight: 500;
+          }
+          .rating {
+            span {
+              height: 1.143rem;
+              width: 1.143rem;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .name-and-description {
+        .name {
+          margin-top: 1rem;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16.8px;
+          color: #5e5873;
+          height: 16.8px;
+          overflow: hidden;
+          transition: 0.3s;
+          &:hover {
+            color: #7367f0 !important;
+          }
+        }
+      }
+    }
+    .product-options {
+      display: flex;
+      font-size: 12px;
+      color: #2a2e30 !important;
+
+      span {
+        font-size: 9px;
+        font-weight: 900;
+        border: none;
+        padding: 12px 2px;
+        transition: 0.3s;
+        display: flex;
+        flex: auto;
+
+        align-items: center;
+        justify-content: center;
+        background-color: #f6f6f6;
+        color: #2a2e30;
+        &:hover {
+          background-color: #e3e3e3;
+        }
+        &.km {
+          border-radius: 0 0 0 0.428rem;
+        }
+        &.cc {
+          border-radius: 0 0 0.428rem 0;
+          justify-content: left;
+          padding-left: 12px;
+        }
+        &.auto {
+          border-radius: 0 0 0 0;
+          padding: 12px;
+          justify-content: left;
+        }
+        svg {
+          margin-right: 7px;
+        }
+      }
+      @media (min-width: 992px) and (max-width: 1161px) {
+        .cc {
+          padding-left: 2px !important;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  &.dark-theme {
+    .location,
+    .day,
+    .month,
+    .tt {
+      color: $text-dark-color !important;
+      font-weight: 300 !important;
+    }
+    .product-price {
+      h6 {
+        color: #b99595;
+      }
+    }
+    .menu-mode {
+      background-color: $second-dark-color;
+      .product-details {
+        .rating-and-price {
+          .product-price {
+            h6 {
+              color: $text-dark-color;
+            }
+          }
+        }
+        .name-and-description {
+          .name {
+            color: $text-dark-color;
+          }
+          .desc {
+            color: #b4b7bd;
+          }
+        }
+      }
+      .product-options {
+        span {
+          &.km {
+            background-color: $second-dark-color;
+            color: $text-dark-color;
+            &:hover {
+              background-color: $main-dark-color;
+            }
+          }
+          &.cc {
+            background-color: $second-dark-color;
+            color: $text-dark-color;
+            &:hover {
+              background-color: $main-dark-color;
+            }
+          }
+          &.auto {
+            background-color: $second-dark-color;
+            color: $text-dark-color;
+            &:hover {
+              background-color: $main-dark-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.light-theme {
+    .menu-mode {
+      background-color: $second-light-color;
+      .product-details {
+        .rating-and-price {
+          .product-price {
+            h6 {
+              color: $text-light-color;
+            }
+          }
+        }
+        .name-and-description {
+          .name {
+            color: $text-light-color;
+          }
+          .desc {
+            color: #6e6b7b;
+          }
+        }
+      }
+      .product-options {
+        span {
+          &.km {
+            background-color: $main-light-color;
+            color: $text-light-color;
+            &:hover {
+              background-color: #e3e3e3;
+            }
+          }
+          &.cc {
+            background-color: $main-light-color;
+            color: $text-light-color;
+            &:hover {
+              background-color: #e3e3e3;
+            }
+          }
+          &.auto {
+            background-color: $main-light-color;
+            color: $text-light-color;
+            &:hover {
+              background-color: #e3e3e3;
+            }
+          }
+        }
+      }
+    }
+    .used {
+      svg {
+        color: #eb7777;
+      }
+    }
+  }
+}
+.used {
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  svg {
+    color: #b99595;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+    font-size: 25px;
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide {
+  padding: 0px !important;
+  .splide__arrow {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+.product-price {
+  h6 {
+    display: flex;
+    justify-content: left;
+    color: #fe821e;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    .count {
+      order: 2;
+      margin-left: 0.5rem;
+    }
+    .currency {
+      order: 1;
+    }
+  }
+}
+.day_month {
+  h6 {
+    display: flex;
+    justify-content: right;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    color: #5e5873;
+    .month {
+      margin-left: 0.5rem;
+    }
+    .day {
+      margin-left: 0.33rem;
+    }
+  }
+}
+.location,
+.day,
+.month,
+.tt {
+  font-weight: 500 !important;
+}

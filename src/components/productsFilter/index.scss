@@ -1,0 +1,207 @@
+/** @format */
+
+@import "../../styles/_dark";
+@import "../../styles/_light";
+
+.products-filter {
+  flex: 260px;
+  max-width: 260px;
+  transition: 0.3s;
+
+  @media (max-width: 991px) {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: -100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    &.active {
+      left: 0;
+    }
+    .filter-title {
+      display: none !important;
+    }
+  }
+  @media (max-width: 575px) {
+    max-width: 180px !important;
+  }
+  h6 {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .filter-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    height: 38.59px;
+    display: grid;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .filter-options {
+    position: relative;
+    padding: 21px;
+    border-radius: 0.428rem;
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0rem;
+
+    box-shadow: 0 4px 24px 0 #e4e9ee1a;
+    form {
+      &:not(:last-of-type) {
+        margin-bottom: 19px;
+      }
+      label {
+        cursor: pointer;
+      }
+      .form-control {
+        font-size: 14px;
+        line-height: 1.1;
+        display: grid;
+        color: #5e5873;
+        grid-template-columns: 1em auto;
+        margin-bottom: 10.5px;
+        gap: 15.2px;
+        input {
+          appearance: none;
+          background-color: transparent;
+          margin: 0;
+          font: inherit;
+          width: 17.98px;
+          height: 17.98px;
+          border: 1px solid #676d7d;
+          border-radius: 40%;
+          transform: translateY(-0.075em);
+          display: grid;
+          place-content: center;
+          &::before {
+            content: "";
+            width: 17.98px;
+            height: 17.98px;
+            border-radius: 30%;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em #7367f0;
+            background-color: #7367f0;
+          }
+          &:checked {
+            border-color: #7367f0;
+            &::before {
+              transform: scale(1);
+            }
+          }
+        }
+        & + .form-control {
+          margin-top: 1rem;
+        }
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        .products-rating {
+          cursor: pointer;
+          display: flex;
+          span {
+            margin-left: 3.5px;
+            color: #7367f0;
+          }
+        }
+        .products-amount {
+          font-size: 14px;
+        }
+      }
+      &.slider-range {
+        label {
+          display: flex;
+          justify-content: space-between;
+          color: #7367f0;
+        }
+      }
+    }
+  }
+
+  &.dark-theme {
+    .filter-title {
+      color: $text-dark-color;
+    }
+    .filter-options {
+      background-color: $second-dark-color;
+      box-shadow: 0 4px 24px 0 #22292f1a !important;
+      h6 {
+        color: $text-dark-color;
+      }
+      form {
+        .form-control {
+          color: $text-dark-color;
+          input {
+            color: $text-dark-color;
+          }
+        }
+        .row {
+          .products-amount {
+            color: $text-dark-color;
+          }
+        }
+      }
+    }
+  }
+  &.light-theme {
+    .filter-title {
+      color: $text-light-color;
+    }
+    .filter-options {
+      background-color: $second-light-color;
+      box-shadow: 0 4px 24px 0 #22292f1a;
+      h6 {
+        color: $text-light-color;
+      }
+      form {
+        .form-control {
+          color: $text-light-color;
+          input {
+            color: $text-light-color;
+          }
+        }
+        .row {
+          .products-amount {
+            color: $text-light-color;
+          }
+        }
+      }
+    }
+  }
+}
+.invisibilty {
+  display: none;
+}
+.visibilty {
+  display: block;
+}
+
+.arrow {
+  margin-left: 0.83rem;
+  display: inline-block;
+  font-weight: 900;
+  position: relative;
+  top: 3px;
+  scale: 1.36;
+}
+.head_filter {
+  display: inline-block;
+}
+.exit {
+  position: absolute;
+  top: 3px;
+  right: 7px;
+  width: 15px;
+  cursor: pointer;
+  text-align: end;
+  display: none;
+  @media (max-width: 991px) {
+    display: block;
+  }
+}
+.activefilter {
+  scale: 1.06;
+}

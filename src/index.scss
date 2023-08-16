@@ -1,0 +1,47 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  ul {
+    list-style: none;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+@media (min-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f8f8f8 !important;
+  }
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b4b7bd;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9598a0;
+}

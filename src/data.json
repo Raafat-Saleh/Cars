@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Volkswagen Passat 2015 Used",
+      "price": 800000,
+      "time": "32",
+      "location": "Mansoura",
+      "distance": 120000,
+      "auto_dual": "Auto",
+      "images": ["./images/3.jpeg", "./images/b.jpeg", "./images/1.jpeg"]
+    },
+    {
+      "id": 2,
+      "title": "Nissan Qashqai 2019 Used",
+      "price": 900000,
+      "time": "25",
+      "location": "Cairo",
+      "distance": 13000,
+      "auto_dual": "Dual",
+      "images": ["./images/1.jpeg", "./images/3.jpeg", "./images/b.jpeg"]
+    },
+    {
+      "id": 3,
+      "title": "Mercedes CLA 200  2023",
+      "price": 885000,
+      "time": "33",
+      "location": "Nasr City",
+      "distance": 22000,
+      "auto_dual": "Auto",
+      "images": ["./images/b.jpeg", "./images/1.jpeg", "./images/3.jpeg"]
+    },
+    {
+      "id": 4,
+      "title": "BMW X5 2017 Used",
+      "price": 2900000,
+      "time": "12",
+      "location": "Mansoura",
+      "distance": 20000,
+      "auto_dual": "Dual",
+      "images": ["./images/m.jpeg", "./images/x.jpeg", "./images/r.jpeg"]
+    },
+    {
+      "id": 5,
+      "title": "Suzuki Celerio 2022",
+      "price": 126000,
+      "time": "15",
+      "location": "Nasr City",
+      "distance": 50000,
+      "auto_dual": "Auto",
+      "images": ["./images/r.jpeg", "./images/x.jpeg", "./images/m.jpeg"]
+    },
+    {
+      "id": 6,
+      "title": "Hyundai Accent HCI 2022",
+      "price": 150000,
+      "time": "23",
+      "location": "Red sea",
+      "distance": 50000,
+      "auto_dual": "Auto",
+      "images": ["./images/x.jpeg", "./images/r.jpeg", "./images/m.jpeg"]
+    },
+    {
+      "id": 7,
+      "title": "Land Rover Range Rover 2022 Used",
+      "price": 3500000,
+      "time": "3",
+      "location": "Mansoura",
+      "distance": 3000,
+      "auto_dual": "Auto",
+      "images": ["./images/1.jpeg", "./images/3.jpeg", "./images/b.jpeg"]
+    },
+    {
+      "id": 8,
+      "title": "Jeep Grand Cherokee 2022",
+      "price": 4100000,
+      "time": "34",
+      "location": "Mina",
+      "distance": 50000,
+      "auto_dual": "Auto",
+      "images": ["./images/b.jpeg", "./images/1.jpeg", "./images/3.jpeg"]
+    },
+    {
+      "id": 9,
+      "title": "Bentley Continental GT 2021 Used",
+      "price": 1650000,
+      "time": "7",
+      "location": "Port said",
+      "distance": 2000,
+      "auto_dual": "Dual",
+      "images": ["./images/3.jpeg", "./images/b.jpeg", "./images/1.jpeg"]
+    },
+    {
+      "id": 10,
+      "title": "Bentley Continental GT 2021 Used",
+      "price": 580000,
+      "time": "24",
+      "location": "Qana",
+      "distance": 43500,
+      "auto_dual": "Dual",
+      "images": ["./images/x.jpeg", "./images/r.jpeg", "./images/m.jpeg"]
+    },
+    {
+      "id": 11,
+      "title": "Peugeot 301 2021 Used",
+      "price": 550000,
+      "time": "12",
+      "location": "Alex",
+      "distance": 4300,
+      "auto_dual": "Dual",
+      "images": ["./images/m.jpeg", "./images/x.jpeg", "./images/r.jpeg"]
+    },
+    {
+      "id": 12,
+      "title": "Peugeot 301 2019 Used",
+      "price": 450000,
+      "time": "19",
+      "location": "Sohag",
+      "distance": 50000,
+      "auto_dual": "Dual",
+      "images": ["./images/r.jpeg", "./images/x.jpeg", "./images/m.jpeg"]
+    },
+    {
+      "id": 13,
+      "title": "Fiat Tipo 2019 Used",
+      "price": 450000,
+      "time": "22",
+      "location": "Dahab",
+      "distance": 10000,
+      "auto_dual": "Auto",
+      "images": ["./images/b.jpeg", "./images/1.jpeg", "./images/3.jpeg"]
+    },
+    {
+      "id": 14,
+      "title": "Mitsubishi Lancer 2016 Used",
+      "price": 480000,
+      "time": "15",
+      "location": "Abbasiya",
+      "distance": 23000,
+      "auto_dual": "Dual",
+      "images": ["./images/3.jpeg", "./images/b.jpeg", "./images/1.jpeg"]
+    },
+    {
+      "id": 15,
+      "title": " Toyota Corolla 2008 Used",
+      "price": 445000,
+      "time": "13",
+      "location": "Alex",
+      "distance": 150000,
+      "auto_dual": "Auto",
+      "images": ["./images/1.jpeg", "./images/3.jpeg", "./images/b.jpeg"]
+    },
+    {
+      "id": 16,
+      "title": "Toyota Corolla 2010 Used",
+      "price": 430000,
+      "time": "24",
+      "location": "Heliopolis",
+      "distance": 331000,
+      "auto_dual": "Dual",
+      "images": ["./images/x.jpeg", "./images/r.jpeg", "./images/m.jpeg"]
+    },
+    {
+      "id": 17,
+      "title": "BAIC X7 2023",
+      "price": 2470000,
+      "time": "44",
+      "location": "Giza",
+      "distance": 5000,
+      "auto_dual": "Auto",
+      "images": ["./images/m.jpeg", "./images/x.jpeg", "./images/r.jpeg"]
+    },
+    {
+      "id": 18,
+      "title": "Suzuki Celerio 2022",
+      "price": 126000,
+      "time": "29",
+      "location": "Dahab",
+      "distance": 50000,
+      "auto_dual": "Auto",
+      "images": ["./images/r.jpeg", "./images/m.jpeg", "./images/x.jpeg"]
+    },
+    {
+      "id": 19,
+      "title": "Suzuki Celerio 2023",
+      "price": 146000,
+      "time": "55",
+      "location": "Taba",
+      "distance": 36500,
+      "auto_dual": "Auto",
+      "images": ["./images/1.jpeg", "./images/3.jpeg", "./images/b.jpeg"]
+    },
+    {
+      "id": 20,
+      "title": "Suzuki Celerio 2017",
+      "price": 100000,
+      "time": "13",
+      "location": "Alex",
+      "distance": 90000,
+      "auto_dual": "Auto",
+      "images": ["./images/3.jpeg", "./images/b.jpeg", "./images/1.jpeg"]
+    },
+    {
+      "id": 21,
+      "title": "Suzuki Celerio 2020",
+      "price": 120000,
+      "time": "32",
+      "location": "Egypt",
+      "distance": 9000,
+      "auto_dual": "Auto",
+      "images": ["./images/b.jpeg", "./images/1.jpeg", "./images/3.jpeg"]
+    }
+  ]
+}
