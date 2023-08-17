@@ -209,6 +209,16 @@
       "distance": 9000,
       "auto_dual": "Auto",
       "images": ["./images/b.jpeg", "./images/1.jpeg", "./images/3.jpeg"]
+    },
+    {
+      "id": 22,
+      "title": "Suzuki Celerio 2022",
+      "price": 170000,
+      "time": "14",
+      "location": "Cairo",
+      "distance": 19000,
+      "auto_dual": "Auto",
+      "images": ["./images/1.jpeg", "./images/3.jpeg", "./images/b.jpeg"]
     }
   ]
 }

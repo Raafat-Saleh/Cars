@@ -71,7 +71,7 @@ export default function ProductsFilter({
   }
 
   function handleLocation(e) {
-    if (e.target.value == "all") {
+    if (e.target.value === "all") {
       setFilterdProducts(products);
     } else {
       setFilterdProducts(
