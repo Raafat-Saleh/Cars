@@ -167,6 +167,9 @@
         }
       }
     }
+    .splide__arrow svg {
+      fill: #b99595 !important;
+    }
   }
   &.light-theme {
     .menu-mode {
@@ -288,4 +291,8 @@ img {
 .month,
 .tt {
   font-weight: 500 !important;
+}
+
+.splide__arrow svg {
+  fill: #fe821e !important;
 }
