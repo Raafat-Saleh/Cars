@@ -296,3 +296,79 @@ img {
 .splide__arrow svg {
   fill: #fe821e !important;
 }
+.hide {
+  visibility: hidden;
+}
+
+//skeleton
+
+.skeleton_Container {
+  width: 100%;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  opacity: 0.3;
+}
+.skeleton::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    #d8d8d8,
+    rgba(255, 255, 255, 0)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: skeleton-animation 1s linear infinite;
+}
+
+.skeleton_image {
+  max-width: 500px;
+  height: 200px;
+  background: #aaa;
+}
+
+@-moz-keyframes skeleton-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes skeleton-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-o-keyframes skeleton-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes skeleton-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.none {
+  visibility: hidden;
+}
+.shw {
+  visibility: visible;
+}

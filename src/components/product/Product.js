@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.scss";
 
 import {
@@ -18,7 +18,7 @@ import "@splidejs/react-splide/css/skyblue";
 
 export default function Product({ product, theme }) {
   const [color, setColor] = useState("");
-
+  const [placeholder, setplaceholder] = useState(true);
   const options = {
     type: "slide",
     arrows: true,
@@ -27,11 +27,21 @@ export default function Product({ product, theme }) {
     omitEnd: true,
   };
 
+  useEffect(() => {
+    const time = setInterval(() => {
+      setplaceholder(false);
+    }, 2000);
+
+    return () => {
+      clearInterval(time);
+    };
+  }, []);
+
   return (
     <div className={`product ${theme}-theme`}>
       <div className="menu-mode">
         <button
-          className="used"
+          className={placeholder ? "used hide" : "used"}
           onClick={() => setColor(color === "" ? "makeColorState" : "")}
         >
           {!color ? (
@@ -42,17 +52,23 @@ export default function Product({ product, theme }) {
         </button>
 
         <div className="product-img">
-          <Splide aria-label="My Favorite Images" options={options}>
-            <SplideSlide>
-              <img src={product.images[0]} alt="Image1" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={product.images[1]} alt="Image2" className="img2" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={product.images[2]} alt="Image3" className="img2" />
-            </SplideSlide>
-          </Splide>
+          {placeholder ? (
+            <div className="skeleton_Container">
+              <div className="skeleton_image skeleton"></div>
+            </div>
+          ) : (
+            <Splide aria-label="My Favorite Images" options={options}>
+              <SplideSlide>
+                <img src={product.images[0]} alt="Image1" />
+              </SplideSlide>
+              <SplideSlide>
+                <img src={product.images[1]} alt="Image2" className="img2" />
+              </SplideSlide>
+              <SplideSlide>
+                <img src={product.images[2]} alt="Image3" className="img2" />
+              </SplideSlide>
+            </Splide>
+          )}
         </div>
 
         <div className="product-details">
