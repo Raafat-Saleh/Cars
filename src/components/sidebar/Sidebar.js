@@ -27,11 +27,7 @@ export default function Sidebar({ activeSideBar, theme }) {
             </div>
           </div>
           <div className="dashboards_big">
-            <Dropdown
-              theme={theme}
-              icon={<AiOutlineHome />}
-              head="Dashboards"
-            />
+            <Dropdown theme={theme} icon={<AiOutlineHome />} head="Home" />
             <Dropdown theme={theme} head="Email" icon={<AiOutlineMail />} />
             <Dropdown theme={theme} head="Chat" icon={<BsChatLeft />} />
             <Dropdown theme={theme} head="Todo" icon={<FcTodoList />} />
@@ -40,16 +36,8 @@ export default function Sidebar({ activeSideBar, theme }) {
               head="Calender"
               icon={<AiOutlineCalendar />}
             />
-            <Dropdown
-              theme={theme}
-              icon={<AiOutlineUser />}
-              head="Dashboards"
-            />
-            <Dropdown
-              theme={theme}
-              icon={<FiShoppingCart />}
-              head="eCommerce"
-            />
+            <Dropdown theme={theme} icon={<AiOutlineUser />} head="Dashboard" />
+            <Dropdown theme={theme} icon={<FiShoppingCart />} head="Store" />
           </div>
         </div>
       ) : (
