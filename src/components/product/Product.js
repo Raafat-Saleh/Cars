@@ -23,7 +23,6 @@ export default function Product({ product, theme }) {
     type: "slide",
     arrows: true,
     pagination: false,
-    pauseOnHover: true,
     speed: 1200,
     omitEnd: true,
   };
