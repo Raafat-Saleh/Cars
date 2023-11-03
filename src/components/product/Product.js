@@ -24,7 +24,6 @@ export default function Product({ product, theme }) {
     arrows: true,
     pagination: false,
     speed: 1200,
-    omitEnd: true,
   };
 
   useEffect(() => {
